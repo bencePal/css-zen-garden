@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700&subset=latin-ext');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+body {
+    background:#FFA7C3 url(image/bg.jpg) no-repeat fixed center;
+    background-size: 100%;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+h1 {
+    font-size: 30px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 20px
+}
+
+p {
+    margin: 0 0 15px
+}
+
+a {
+    color: #d60ec3;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    color: #79096f;
+}
+
+.page-wrapper {
+    position: relative;
+    background-color: #f3f3f3;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    opacity: 0.8;
+}
+
+.page-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#zen-intro {
+    position: relative;
+    margin-bottom: 25px
+}
+
+#zen-intro h1 {
+    float: left;
+    margin: 0;
+    display: block;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+}
+
+#zen-intro h1:hover {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+#zen-intro h2 {
+    margin: 0;
+    position: absolute;
+    right: 28px;
+    transition-duration: 0.8s;
+}
+
+#zen-intro h2:hover {
+    right: -450px;
+}
+
+#zen-intro header {
+    padding: 20px 28px;
+    position: fixed;
+    top: 0;
+    width: 960px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 60px;
+}
+
+#zen-summary, #zen-preamble {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #222;
+    color: #fff;
+    text-shadow: 3px 3px 3px #111;
+    box-shadow: 3px 3px 2px #111;
+}
+
+#zen-summary a:hover, #zen-preamble a:hover {
+    color: #ffbdf9;
+}
+
+#zen-summary {
+    margin-top: 55px;
+}
+
+#zen-preamble {
+    margin-top: 10px;
+}
+
+#zen-supporting {
+    float: left;
+    width: 60%;
+    padding-right: 5%;
+}
+
+.sidebar {
+    float: right;
+    width: 40%;
+    padding-left: 5%;
+}
+
+.sidebar > div > div:after {
+    border-radius: 1px;
+    margin-bottom: 12px;
+    height: 5px;
+    display: block;
+    width: 0;
+    background-color: #838dea;
+    border-right: 1px #fff;
+    content: '';
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.sidebar > div > div:hover:after {
+    width: 100%;
+}
+
+#design-selection:after {
+    background-color: #c4315f;
+}
+
+#design-archives:after {
+    background-color: #333;
+}
+
+footer {
+    border-radius: 3px;
+    background-color: #560404;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 920px;
+}
+
+footer > a {
+    margin: 0 5px;
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 960px) {
+    footer {
+        width: 100%
+    }
+}
